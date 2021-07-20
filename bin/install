@@ -14,6 +14,8 @@ install_trdsql() {
 
     curl -fL# -o "${install_path}/bin/batect" \
       "https://github.com/batect/batect/releases/download/${install_version}/batect"
+
+    chmod +x "${install_path}/bin/batect"
 }
 
 install_trdsql "$ASDF_INSTALL_TYPE" "$ASDF_INSTALL_VERSION" "$ASDF_INSTALL_PATH"
